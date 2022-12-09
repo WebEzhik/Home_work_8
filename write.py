@@ -1,3 +1,5 @@
+import telebot
+
 def New_Entry():
     ID = input('Введите ID: ')
     sirname = input('Введите фамилию: ')
@@ -9,3 +11,5 @@ def New_Entry():
 
     with open('employees.csv','a', encoding='utf-8') as book:
         book.write(f'{ID}, {sirname}, {name}, {father_name}, {phone}, {department}, {position};\n')
+
+
